@@ -1,11 +1,11 @@
 # NestJS-Passport-JWT-Authentification
 A Small Example About the passport-jwt Authentication Using NestJS 
 
-#Project Installation
+### Project Installation
 npm install / yarn install
 
-#Create .env File
+### Create .env File
 cp .env.example .env
 
-#Run
+### Run
 sudo npm run start:dev
