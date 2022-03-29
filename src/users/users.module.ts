@@ -1,4 +1,3 @@
-import { AuthService } from 'src/auth/services/auth/auth.service';
 import { User } from './../typeorm/User';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Module } from '@nestjs/common';

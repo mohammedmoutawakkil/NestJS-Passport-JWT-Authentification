@@ -1,5 +1,4 @@
 import { Response } from 'express';
-import { JwtService } from '@nestjs/jwt';
 import { authDTO } from './../../dto/auth.dto';
 import {
   Body,
@@ -9,12 +8,10 @@ import {
   Inject,
   Post,
   Res,
-  UseGuards,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
 import { AuthService } from 'src/auth/services/auth/auth.service';
-import { AuthGuard } from '@nestjs/passport';
 
 @Controller('auth')
 export class AuthController {
