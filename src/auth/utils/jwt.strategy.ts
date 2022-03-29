@@ -8,8 +8,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     @Inject('AUTH_SERVICE') private readonly authService: AuthService,
   ) {
     super({
-      jwtFromRequest: //ExtractJwt.fromAuthHeaderAsBearerToken(),
-      (req) => {
+      jwtFromRequest:(req) => {
         if (!req || !req.cookies) return null;
         return req.cookies['access_token'];
       },
